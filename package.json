@@ -6,6 +6,7 @@
   "description": "Our vision, bot",
   "dependencies": {
     "hubot": "^2.16.0",
+    "hubot-cute-me": "^1.0.0",
     "hubot-darksky": "^1.0.2",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.1",
