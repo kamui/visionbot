@@ -156,15 +156,20 @@ cline@^0.8.2:
   resolved "https://registry.yarnpkg.com/cline/-/cline-0.8.2.tgz#e911e741a0ad2e24d29e6fab2cf89fa322d59c76"
   integrity sha1-6RHnQaCtLiTSnm+rLPifoyLVnHY=
 
-coffee-script@1.6.3, coffee-script@~1.6:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.6.3.tgz#6355d32cf1b04cdff6b484e5e711782b2f0c39be"
-  integrity sha1-Y1XTLPGwTN/2tITl5xF4Ky8MOb4=
-
 coffee-script@^1.12.4:
   version "1.12.7"
   resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.12.7.tgz#c05dae0cb79591d05b3070a8433a98c9a89ccc53"
   integrity sha512-fLeEhqwymYat/MpTPUjSKHVYYl0ec2mOyALEMLmzr5i1isuG+6jfI2j2d5oBO3VIzgUXgBVIcOT9uH1TFxBckw==
+
+coffee-script@~1.6:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.6.3.tgz#6355d32cf1b04cdff6b484e5e711782b2f0c39be"
+  integrity sha1-Y1XTLPGwTN/2tITl5xF4Ky8MOb4=
+
+coffeescript@1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-1.6.3.tgz#41749750c621a6553c7c03818a5384bb24c30541"
+  integrity sha1-QXSXUMYhplU8fAOBilOEuyTDBUE=
 
 colors@1.0.x:
   version "1.0.3"
@@ -447,6 +452,11 @@ has-ansi@^2.0.0:
   dependencies:
     ansi-regex "^2.0.0"
 
+he@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
+  integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
 http-errors@1.6.3, http-errors@~1.6.2, http-errors@~1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.3.tgz#8b55680bb4be283a0b5bf4ea2e38580be1d9320d"
@@ -499,10 +509,10 @@ hubot-darksky@^1.1.0:
   dependencies:
     coffee-script "~1.6"
 
-hubot-diagnostics@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/hubot-diagnostics/-/hubot-diagnostics-0.0.2.tgz#a042b2cdc9fd8f01583e105658130a6d8b9af386"
-  integrity sha1-oEKyzcn9jwFYPhBWWBMKbYua84Y=
+hubot-diagnostics@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/hubot-diagnostics/-/hubot-diagnostics-1.0.0.tgz#3a20de525901b83924b523b1244dcb726a8def69"
+  integrity sha512-4kuR04lULoDDra/Z7B/rgMQMZW531Ve5hwhd8xNOKAl8e1cb5bZNqVpGFYF174eYcN54+RZuWQFHsntjvczyag==
 
 hubot-fliptable@^2.0.0:
   version "2.0.0"
@@ -553,42 +563,44 @@ hubot-scripts@^2.17.2:
   dependencies:
     redis "0.8.4"
 
-hubot-seen@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hubot-seen/-/hubot-seen-1.0.1.tgz#6a12ec461f74cbd74dca742e0017d5914912cb54"
-  integrity sha1-ahLsRh90y9dNynQuABfVkUkSy1Q=
+hubot-seen@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hubot-seen/-/hubot-seen-2.0.0.tgz#5b85b3cda745242b031078d5ef56cd9a2d0ddf94"
+  integrity sha512-WZeMgB4YwDoUcJXxGP8xc+knelVk0Xfl5tGjjv3SEQy8pRvdoYfSyaMvHCZuzgVNqcNf/AsvIFIicnGrxxGblg==
   dependencies:
     coffee-script "^1.12.4"
-    timeago "^0.1.0"
+    timeago.js "^4.0.2"
 
 hubot-shipit@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/hubot-shipit/-/hubot-shipit-0.2.1.tgz#4fbc9e161953bf7901fdc36e2a702c13103f16b2"
   integrity sha1-T7yeFhlTv3kB/cNuKnAsExA/FrI=
 
-hubot-slack@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/hubot-slack/-/hubot-slack-4.6.0.tgz#c016cc1b6cf76a35d613acb98382d14bafdfd7ad"
-  integrity sha512-eYnOmn76kMOQzjPKKM6/woanhUG7EwhgviH34MNWkf2EhlkkouKSe0wTkIt4n9OPbvuDf+531PO+XeKXMs4nrA==
+hubot-slack@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/hubot-slack/-/hubot-slack-4.9.0.tgz#5b22caf5dd398cc80d5c2f1c2ec16b22f777fa8d"
+  integrity sha512-liNHxyii/XZe2ypXP8IEPas5paJwVVRVZYMcVy3cHlIYzRaY+99ayBptEI+KWfqzhzxnLGV2aGjHUjolBsl0iA==
   dependencies:
     "@slack/client" "3.16.1-sec.2"
     bluebird "^3.5.1"
     lodash "^4.17.10"
 
-hubot-youtube@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/hubot-youtube/-/hubot-youtube-1.1.1.tgz#00878550838603255cd9aed51b183d31e34eb9b5"
-  integrity sha512-fCP5b1OFHvhlLf/C1IL/e2EB8/dIw4A7ihO9IScObb1PsN0uF6/8+qGgxUqbWtIAiWwR5KqNoymwk/IAjwmErw==
+hubot-youtube@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/hubot-youtube/-/hubot-youtube-1.2.1.tgz#2039eb6e376170dcfcd1e006cd8954bbc4e94746"
+  integrity sha512-QKtjY0fIv+TeUfUAZUzjMwJdKccfQqJvnk84PVj/lFaFNtTLntu3PPe5RVOY/lhm9B6IvhLrQS2t0w9g26KQMw==
+  dependencies:
+    he "^1.2.0"
 
-hubot@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/hubot/-/hubot-3.1.1.tgz#c6e8ac10e3d7001043d064c52b6e946afd7ea749"
-  integrity sha512-r57C1CGZmUaADRom6CGi8aL0J3rPIV3fHYvVA+Zv7kPtsfZiwDcqF+x89QrKP5zidN9+0LVCbTnbzwXP8QDfUA==
+hubot@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hubot/-/hubot-3.3.2.tgz#6ad13db19082cbe57ee3f9cc1c2c856d15cba223"
+  integrity sha512-+8h/s+t5GirjuDW5K1QjTGBGzOU8ksEi51HeLdFghYOWj40x6ndhAU3C6SRPk/7yHj6luVPuVi/Y8s0P+lqM9Q==
   dependencies:
     async ">=0.1.0 <1.0.0"
     chalk "^1.0.0"
     cline "^0.8.2"
-    coffee-script "1.6.3"
+    coffeescript "1.6.3"
     connect-multiparty "^2.1.1"
     express "^4.16.3"
     log "1.4.0"
@@ -965,10 +977,10 @@ supports-color@^2.0.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
 
-timeago@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/timeago/-/timeago-0.1.0.tgz#21176a84d469be35ee431c5c48c0b6aba1f72464"
-  integrity sha1-IRdqhNRpvjXuQxxcSMC2q6H3JGQ=
+timeago.js@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/timeago.js/-/timeago.js-4.0.2.tgz#724e8c8833e3490676c7bb0a75f5daf20e558028"
+  integrity sha512-a7wPxPdVlQL7lqvitHGGRsofhdwtkoSXPGATFuSOA2i1ZNQEPLrGnj68vOp2sOJTCFAQVXPeNMX/GctBaO9L2w==
 
 toidentifier@1.0.0:
   version "1.0.0"
@@ -1076,15 +1088,15 @@ ws@^1.0.1:
     options ">=0.0.5"
     ultron "1.0.x"
 
-xml2js@^0.4.19:
-  version "0.4.19"
-  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
-  integrity sha512-esZnJZJOiJR9wWKMyuvSE1y6Dq5LCuJanqhxslH2bxM6duahNZ+HMpCLhBQGZkbX6xRf8x1Y2eJlgt2q3qo49Q==
+xml2js@^0.4.23:
+  version "0.4.23"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
+  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
   dependencies:
     sax ">=0.6.0"
-    xmlbuilder "~9.0.1"
+    xmlbuilder "~11.0.0"
 
-xmlbuilder@~9.0.1:
-  version "9.0.7"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
-  integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
+xmlbuilder@~11.0.0:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
+  integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==

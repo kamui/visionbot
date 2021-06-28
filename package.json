@@ -5,10 +5,10 @@
   "author": "ponyexpress@8keys.us",
   "description": "Our vision, bot",
   "dependencies": {
-    "hubot": "^3.1.1",
+    "hubot": "^3.3.2",
     "hubot-cute-me": "^1.0.0",
     "hubot-darksky": "^1.1.0",
-    "hubot-diagnostics": "^0.0.2",
+    "hubot-diagnostics": "^1.0.0",
     "hubot-fliptable": "^2.0.0",
     "hubot-google-images": "^0.2.7",
     "hubot-google-translate": "^0.2.1",
@@ -18,13 +18,10 @@
     "hubot-redis-brain": "^1.0.0",
     "hubot-roll": "^2.0.1",
     "hubot-scripts": "^2.17.2",
-    "hubot-seen": "^1.0.1",
+    "hubot-seen": "^2.0.0",
     "hubot-shipit": "^0.2.1",
-    "hubot-slack": "^4.6.0",
-    "hubot-youtube": "^1.1.1",
-    "xml2js": "^0.4.19"
-  },
-  "engines": {
-    "node": "10.x"
+    "hubot-slack": "^4.9.0",
+    "hubot-youtube": "^1.2.1",
+    "xml2js": "^0.4.23"
   }
 }
